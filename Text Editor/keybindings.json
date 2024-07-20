@@ -1,0 +1,41 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "-redo"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "alt+up",
+    "command": "filebunny.goToTopActiveFile"
+  },
+  {
+    "key": "alt+down",
+    "command": "filebunny.goToBottomActiveFile"
+  },
+  {
+    "key": "alt+ctrl+up",
+    "command": "editor.action.insertCursorAbove"
+  },
+  {
+    "key": "alt+ctrl+down",
+    "command": "editor.action.insertCursorBelow"
+  }
+]
