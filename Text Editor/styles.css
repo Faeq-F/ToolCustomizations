@@ -93,3 +93,7 @@ body {
 .monaco-list {
     --vscode-list-focusAndSelectionOutline: transparent !important;
 }
+
+.monaco-workbench>.notifications-toasts {
+    display: none !important;
+}
