@@ -8,7 +8,7 @@
 }
 
 div.line-numbers.active-line-number {
-    margin-left: 7px !important;
+    margin-left: -17px !important;
 }
 
 .monaco-scrollable-element>.scrollbar>.slider {

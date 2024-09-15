@@ -47,7 +47,7 @@
   "customvscodeuicss.css": "G:/Documents/usr/ToolCustomizations/Text Editor/styles.css",
   "background.fullscreen": {
     "images": [
-      "https://raw.githubusercontent.com/Faeq-F/ToolCustomizations/main/BG.png"
+      "https://raw.githubusercontent.com/Faeq-F/ToolCustomizations/main/FullscreenForestBG.png"
     ],
     "opacity": 0.65,
     "size": "cover",
@@ -93,10 +93,10 @@
     "files.trimTrailingWhitespace": false
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
@@ -109,6 +109,11 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
+  },
+  "[tex]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false
   },
   "prettyxml.settings.indentSpaceLength": 2,
   "prettier.bracketSameLine": true,
@@ -2161,5 +2166,9 @@
       }
     ]
   },
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

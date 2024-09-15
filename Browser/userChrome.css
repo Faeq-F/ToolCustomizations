@@ -1,0 +1,67 @@
+/*************************************************************************************************************************************************************************************************************************************************************
+
+"userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's interface (NOT internal site) using "chrome" privileges.
+For instance, if you want to hide the tab bar, you can use the following CSS rule:
+
+**************************************
+#TabsToolbar {                       *
+    display: none !important;        *
+}                                    *
+**************************************
+
+NOTE: You can use the userChrome.css file without change preferences (about:config)
+
+Quote: https://userChrome.org | https://github.com/topics/userchrome
+
+************************************************************************************************************************************************************************************************************************************************************/
+
+@charset "UTF-8";
+
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  /* Please write your custom CSS under this line*/
+  /* Edit me in the Style Editor in the browser toolbox for live reload! */
+  
+  /*
+  For top padding to browser window without fullscreen issues
+  */
+  
+  toolbar[toolbarname="Bookmarks Toolbar"]{
+    min-height: 5px !important;
+  }
+  
+  toolbarbutton[label="Bookmarks menu"]{
+    display: none !important;
+  }
+  
+  /*
+  Misc.
+  */
+
+  #urlbar {
+    margin-top: 0px !important;
+    margin-bottom: -3px !important;
+  }
+  
+  #nav-bar{
+    border-top: 0px !important;
+    margin-top: -4px !important;
+  }
+  
+  #back-button,
+  #forward-button{
+    display: none !important;
+  }
+  
+  #TabsToolbar {
+    padding-left: 5px !important;
+  }
+  
+  .toolbarbutton-icon{
+    --toolbarbutton-border-radius: 0px !important;
+  }
+
+  #urlbar-container[breakout] {
+    margin-bottom: 0px !important;
+  }
+
+}
